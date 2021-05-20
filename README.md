@@ -5,3 +5,4 @@ Projet pour tester l'outil ***Restler***.
 * /say/hi
 * /animals/listall
 * /animals/listsomeanimals
+* /restricted?key=password

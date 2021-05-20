@@ -9,4 +9,7 @@ $r->addAPIClass('Say');
 $r->addAPIClass('Animals');
 $r->addAPIClass('BMI');
 $r->addAPIClass('Currency');
+$r->addAPIClass('Simple', '');
+$r->addAPIClass('Secured');
+$r->addAuthenticationClass('SimpleAuth');
 $r->handle(); //serve the response
