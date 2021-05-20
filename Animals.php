@@ -20,8 +20,14 @@ class Animals
     public function listSomeAnimals()
     {
         $db = $this->getDbConnect();
-        $req = $db->prepare('SELECT animal.nom AS "nom de l\'animal", espece.nom_courant AS "nom de l\'espèce" FROM `animal` INNER JOIN espece ON espece.id = animal.espece_id ORDER BY animal.nom DESC LIMIT 10');
+        $req = $db->prepare('SELECT animal.nom, espece.nom_courant FROM `animal` INNER JOIN espece ON espece.id = animal.espece_id ORDER BY animal.nom DESC LIMIT 10');
         $req->execute();
         return $req->fetchAll();
+    }
+    public function addAnimal($name) //test pour une requête POST, mais ne marche pas encore
+    {
+        $db = $this->getDbConnect();
+        $req = $db->prepare('INSERT INTO animal(nom, espece_id) VALUES (?,?)');
+        $req->execute(array($name, 1));
     }
 }

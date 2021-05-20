@@ -6,3 +6,4 @@ Projet pour tester l'outil ***Restler***.
 * /animals/listall
 * /animals/listsomeanimals
 * /restricted?key=password
+* /authors
