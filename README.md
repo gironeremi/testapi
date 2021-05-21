@@ -7,3 +7,11 @@ Projet pour tester l'outil ***Restler***.
 * /animals/listsomeanimals
 * /restricted?key=password
 * /authors
+
+## Autres commandes
+* POST /authors
+* PUT /authors/{id}
+* DELETE /authors/{id}
+
+### WorkInProgess
+Réaliser des méthodes de types POST, PUT et DELETE.
